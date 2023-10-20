@@ -1,0 +1,44 @@
+body {
+    font-family: Bookman Old Style;
+    background: linear-gradient(78deg, rgba(23, 53, 225, 0.58), rgb(16, 16, 224));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(6, 44, 53, 0.68);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 40px #fff;
+}
+
+h1 {
+    color: #fff;
+}
+
+button {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+    color: rgba(0, 0, 0, 0.98);
+    background: rgba(235, 248, 0, 0.82);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin: 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.5ms;
+    border-radius: 25px;
+
+}

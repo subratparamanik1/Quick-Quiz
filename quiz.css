@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Bookman Old Style;
+    background: linear-gradient(78deg, rgba(23, 53, 225, 0.58), rgb(16, 16, 224));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(3, 2, 6, 0.55);
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+#title {
+    font-size: 3rem;
+    color: rgb(255, 254, 255);
+}
+
+/* Main container styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+}
+
+/* Quiz container styles */
+#quiz-container {
+    background: rgba(19, 80, 94, 0.68);
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 90vw;
+    max-width: 600px;
+    text-align: center;
+    margin: 2rem auto;
+    box-shadow: 0 0 35px #fff;
+}
+
+.questions {
+    margin-bottom: 1.5rem;
+}
+
+.questions h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.option {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: solid 0.1rem rgb(155, 155, 192);
+    width: 100%;
+    background: rgb(231, 235, 236);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.option:hover {
+    color: rgb(245, 245, 248);
+    background-color: rgb(12, 12, 13);
+}
+
+ol {
+    padding: 0 1.5rem;
+    color: rgb(15, 15, 15);
+}
+
+span {
+    display: block;
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+}
+
+#stat {
+    margin-top: 1rem;
+    color: #fff;
+}
+
+/* Buttons styles */
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+    color: rgba(0, 0, 0, 0.98);
+    background: rgba(235, 248, 0, 0.82);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin: 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:active {
+    background: rgb(91, 91, 124);
+}
+
+/* Scoreboard and Answer section styles (hidden by default) */
+#scoreboard,
+#answerBank {
+    background: rgba(199, 199, 206, 0.77);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    display: none;
+}
+
+#scoreboard img,
+#answerBank img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+#score-title {
+    margin: 1rem 0;
+}
+
+#play-again-btn,
+#check-answer-btn,
+#back-to-quiz-btn {
+    margin-top: 1rem;
+}
+
+#score {
+    font-size: 2rem;
+}
+
+#answerBank li {
+    text-align: left;
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+}
+
+#answers {
+    margin-top: 1rem;
+}

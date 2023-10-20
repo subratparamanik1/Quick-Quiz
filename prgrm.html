@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quiz</title>
+    <link rel="shortcut icon" href="/Logo/Quick_Quiz_logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="prgrm.css">
+</head>
+<body>
+    <header>
+        <img src="/Logo/Quick_Quiz_logo-removebg-preview.png" alt="Quick Quiz Logo" id="logo" class="logo">
+        <h1 id="title">QUICK QUIZ</h1>
+    </header>
+
+    <main>
+        <div id="quiz-container">
+            <!-- Question container -->
+            <div class="questions">
+                <h2 id="question"></h2>
+                <ol type="A">
+                    <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+                    <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                    <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+                    <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+                </ol>
+                <h4 id="stat"></h4>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="next">Next</button>
+            </div>
+        </div>
+
+        <!-- Scoreboard section -->
+        <div id="scoreboard">
+            <img src="/Logo/Quick_Quiz_logo-removebg-preview.png" alt="Quick Quiz Logo">
+            <h2 id="score-title">Your Score</h2>
+            <h2 id="score"></h2>
+            <button type="button" id="play-again-btn" onclick="backToQuiz()">Play Again</button>
+            <button type="button" id="check-answer-btn" onclick="checkAnswer()">Check Answers</button>
+        </div>
+
+        <!-- Answers section -->
+        <div id="answerBank">
+            <h2>Answers :</h2>
+            <ol type="1" id="answers"></ol>
+            <button type="button" id="back-to-quiz-btn" onclick="backToQuiz()">Back to Quiz</button>
+        </div>
+    </main>
+    <script type="module" src="prgm.js"></script>
+    <script type="module" src="prgrm.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
