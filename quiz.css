@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body {
     font-family: Bookman Old Style;
     background: linear-gradient(78deg, rgba(23, 53, 225, 0.58), rgb(16, 16, 224));

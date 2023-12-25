@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body {
     font-family: Bookman Old Style;
     background: linear-gradient(78deg, rgba(23, 53, 225, 0.58), rgb(16, 16, 224));
@@ -94,6 +98,19 @@ span {
     color: #fff;
 }
 
+#timer {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 160px;
+    right: 10px;
+    color: #fff;
+    font-family: Bookman Old Style;
+    font-size: 1rem;
+}
+#timer-value{
+    display: inline;
+}
 /* Buttons styles */
 .buttons {
     text-align: center;
